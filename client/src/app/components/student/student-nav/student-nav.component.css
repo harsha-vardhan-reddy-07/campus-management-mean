@@ -1,0 +1,39 @@
+.student-navbar{
+    width: 40vh;
+    background-color: rgb(44, 193, 234);
+    height: 100%;
+    padding: 7% 5%;
+    border-radius: 0.7rem;
+}
+
+.student-navbar h3{
+
+    font-size: 1.4rem;
+    color: aliceblue;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.nav-options{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.nav-options p{
+    border: 1px solid rgba(240, 248, 255, 0.692);
+    padding: 10px;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.nav-options p:hover{
+    background-color: rgba(240, 248, 255, 0.436);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.nav-options .selected{
+    background-color: rgba(240, 248, 255, 0.436);
+    color: aliceblue;
+}

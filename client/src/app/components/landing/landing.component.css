@@ -1,0 +1,76 @@
+.landing-page{
+
+    height: fit-content;
+}
+
+.landing-hero{
+    height: 100vh;
+    background: url('../../../assets/landing_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hero-nav{
+
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.hero-nav h3{
+    margin: 0;
+    color: aliceblue;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.landing-hero button{
+    background-color: rgba(240, 248, 255, 0);
+    border: 1.5px solid rgb(35, 166, 248);
+    color: rgb(35, 166, 248);
+    padding: 8px 30px;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.landing-hero button:hover{
+    background-color: rgb(35, 166, 248);
+    /* border: 1.5px solid ; */
+    color: rgb(245, 250, 253);
+
+}
+
+.hero-text{
+
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 20vh;
+}
+
+.hero-text h1{
+
+    color: aliceblue;
+    font-size: 4rem;
+}
+
+.hero-text h1 b{
+    color: rgb(35, 166, 248);
+}
+
+.hero-text p{
+    color: rgb(126, 128, 129);
+    font-size: 0.8rem;
+}
+
+.hero-text button{
+
+}
+
+.hero-text button:hover{
+
+
+}

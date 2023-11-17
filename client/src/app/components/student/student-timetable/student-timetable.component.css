@@ -1,0 +1,34 @@
+.student-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.student-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.student-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.student-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+
+
+.student-timetable img{
+    width: 100%;
+    height: 72vh;
+}

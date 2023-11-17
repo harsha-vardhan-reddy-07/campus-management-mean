@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Campus management system</title>
+  </head>
+  <body>
+    
+    
+    <div class="student-page">
+
+      <app-student-nav></app-student-nav>
+
+      <div class="student-home">
+        <h3>Marks ({{student.semester}})</h3>
+        <hr>
+
+        <div class="student-marks-container">
+          <div class="marks-container">
+            <h4><b>Internal Exams</b> (25 marks)</h4> 
+            <hr> 
+            <div class="marks-body">
+
+              <div *ngFor="let mark of transformedMarks">
+
+                <span *ngIf="mark[0] === 'internal exam' && mark[2]" >
+                  <p>{{mark[1]}}</p>
+                  <p>{{mark[2]}}</p>
+                </span>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="marks-container">
+            <h4><b>External Exams</b> (75 marks)</h4> 
+            <hr>
+            <div class="marks-body">
+
+              <div *ngFor="let mark of transformedMarks">
+
+                <span *ngIf="mark[0] === 'external exam'  && mark[2]">
+                  <p>{{mark[1]}}</p>
+                  <p>{{mark[2]}}</p>
+                </span>
+
+              </div>
+ 
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,74 @@
+.student-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.student-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.student-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.student-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+.student-marks-container{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+
+.marks-container{
+    width: 40%;
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 68vh;
+    background-color: rgb(247, 251, 255);
+}
+
+.marks-container h4{
+    font-size: 1rem;
+
+}
+
+.marks-container h4 b{
+    font-size: 1.7rem;
+    font-weight: 400;
+    
+}
+
+.marks-container hr{
+    color: rgb(242, 32, 70);
+    height: 2px;
+}
+
+.marks-body{
+
+
+}
+
+.marks-body span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.marks-body span p{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: rgb(36, 94, 139);
+}

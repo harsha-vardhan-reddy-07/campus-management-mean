@@ -1,0 +1,68 @@
+.student-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.student-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.student-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.student-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+.notices-container{
+    height: 87%;
+    overflow-y: scroll;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notice{
+
+    border: 1px solid rgba(69, 133, 189, 0.185);
+    padding: 2%;
+    border-radius: 0.5rem;
+}
+
+.notice:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.notice span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice p{
+    margin: 0;
+    color: rgb(125, 127, 127);
+    font-size: 0.85rem;
+}   
+
+.notice span h4{
+    font-size: 1.2rem;
+    color: rgb(48, 95, 119);
+    font-weight: 400;
+}
+
+.notice span p{
+    font-size: 0.9rem;
+    color: rgb(178, 180, 181);
+}
