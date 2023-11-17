@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Campus management system</title>
+  </head>
+  <body>
+    
+    
+    <div class="admin-page">
+
+      <app-admin-nav></app-admin-nav>
+
+      <div class="admin-home">
+        <h3>Update student data</h3>
+        <hr>
+
+        <div class="students-data-container">
+
+          
+            <span class="span-50-50">
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="text" [(ngModel)]="name" name="name" >
+                    <label for="floatingPassword">Student name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="text" [(ngModel)]="studentId" name="studentId">
+                    <label for="floatingPassword">Student Id</label>
+                </div>
+
+            </span>
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="text" [(ngModel)]="studentImg" name="studentImg">
+                <label for="floatingPassword">Student photo url</label>
+            </div>
+
+            <span class="span-50-50">
+
+                <div class="form-floating mb-3">
+                    <select class="form-control" [(ngModel)]="branch" name="branch">
+                        <option value="">Choose Department</option>
+                        <option value="Civil">Civil Department</option>
+                        <option value="Electrical">Electrical Department</option>
+                        <option value="Electronics & Communication">Electronics & Communication Department</option>
+                        <option value="Mechanical">Mechanical Department</option>
+                        <option value="Computer Science">Computer Science Department</option>
+                    </select>
+                    <label for="floatingPassword">Branch</label>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <select class="form-control" [(ngModel)]="semester" name="semester">
+                        <option value="">Choose Semester</option>
+                        <option value="semester 1">Semester 1</option>
+                        <option value="semester 2">Semester 2</option>
+                        <option value="semester 3">Semester 3</option>
+                        <option value="semester 4">Semester 4</option>
+                        <option value="semester 5">Semester 5</option>
+                        <option value="semester 6">Semester 6</option>
+                        <option value="semester 7">Semester 7</option>
+                        <option value="semester 8">Semester 8</option>
+                    </select>
+                    <label for="floatingPassword">Semester</label>
+                </div>
+
+            </span>
+
+            <span class="span-333">
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="text" [(ngModel)]="email" name="email">
+                    <label for="floatingPassword">Email</label>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="text" [(ngModel)]="mobile" name="mobile">
+                    <label for="floatingPassword">Mobile</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="text" [(ngModel)]="password" name="password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+
+            </span>
+
+            <button class="btn btn-outline-success" (click)="updatestudent()" >Update student</button>
+
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

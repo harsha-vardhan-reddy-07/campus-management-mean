@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Campus management system</title>
+  </head>
+  <body>
+    
+    
+    
+    <div class="faculty-page">
+
+      <app-faculty-nav></app-faculty-nav>
+
+      <div class="faculty-home">
+
+        <h3>Marks</h3>
+        <hr>
+
+        <div class="marks-container">
+
+          <div class="marks-filter">
+
+            <select class="form-control" [(ngModel)]="semester" name="semester" (change)="semesterChange($event)" >
+              <option value="">Choose Semester</option>
+              <option value="semester 1">Semester 1</option>
+              <option value="semester 2">Semester 2</option>
+              <option value="semester 3">Semester 3</option>
+              <option value="semester 4">Semester 4</option>
+              <option value="semester 5">Semester 5</option>
+              <option value="semester 6">Semester 6</option>
+              <option value="semester 7">Semester 7</option>
+              <option value="semester 8">Semester 8</option>
+            </select>
+
+            <select class="form-control" [(ngModel)]="examType" name="examType">
+              <option value="">Choose Exam type</option>
+              <option value="internal exam">Internal Exam (max 25 marks)</option>
+              <option value="external exam">External Exam (max 75 marks)</option>
+            </select>
+
+            <select class="form-control" [(ngModel)]="subject" name="subject" >
+              <option value="">Choose subject</option>
+              <div>
+                
+              </div>
+              <option *ngFor="let option of subjectOptions" value={{option}}>{{option}}</option>
+            </select>
+
+            <button class="btn btn-outline-primary" (click)="fetchStudents()" >Fetch students</button>
+
+          </div>
+
+
+          <div class="students-marks-container" >
+
+            <h4>Assign marks</h4>
+
+            <div class="students-marks-body" *ngIf="students.length > 0">
+
+              <div class="students-marks"  >
+
+                <span *ngFor="let student of students">
+                  <p>{{student}}</p>
+                  <input type="text" placeholder="marks" [(ngModel)]="marks[student]" >
+                </span>
+
+              </div>
+              <button class="btn btn-outline-success" (click)="submitMarks()" >Submit</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      
+      </div>
+    </div>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

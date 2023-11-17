@@ -1,0 +1,64 @@
+.admin-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.admin-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.admin-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.admin-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+
+.admin-home-body{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-evenly;
+    row-gap: 8vh;
+}
+
+.admin-home-card{
+    background-color: rgb(246, 251, 255);
+    padding: 3vh 2vw;
+    text-align: center;
+    border: 1px solid rgba(137, 172, 203, 0.358);
+    border-radius: 0.6rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.admin-home-card:hover{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.admin-home-card span{
+
+}
+
+.admin-home-card span h5{
+
+}
+
+.admin-home-card span p{
+
+}
+
+.admin-home-card button{
+
+
+}

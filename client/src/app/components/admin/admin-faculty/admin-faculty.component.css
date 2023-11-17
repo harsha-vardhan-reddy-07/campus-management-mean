@@ -1,0 +1,96 @@
+.admin-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.admin-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.admin-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.admin-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+.admin-home span{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.students-data-container{
+
+
+}
+
+.data-search{
+
+    display: flex;
+    gap: 1%;
+}
+
+.data-search input{
+
+}
+
+.data-search button{
+    width: 20%;
+
+}
+
+.search-result{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 2% 4%;
+    background-color: rgb(244, 248, 252);
+}
+
+.search-details-text{
+
+}
+
+.search-details-text span{
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+}
+
+.search-details-text span b{
+    font-weight: 500;
+    color: rgb(20, 88, 114);
+}
+
+.search-details-text span p{
+    color: rgb(109, 157, 170);
+}
+
+.search-details-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-details-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(157, 166, 174);
+}

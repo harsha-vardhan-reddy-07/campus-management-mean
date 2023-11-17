@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Campus management system</title>
+  </head>
+  <body>
+    
+    
+    <div class="admin-page">
+
+      <app-admin-nav></app-admin-nav>
+
+      <div class="admin-home">
+        <span>
+          <h3>Noticeboard</h3>
+          <button type="button" class="btn btn-success" (click)="newNoticeOpen = true" >New notice</button>
+          
+        </span>
+        <hr>
+
+        <div class="new-notice-container" *ngIf="newNoticeOpen" >
+
+          <h4>Post new notice</h4>
+
+          <div class="new-notice">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingPassword" placeholder="text" [(ngModel)]="title" name="title" >
+              <label for="floatingPassword">Notice title</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea type="text" class="form-control" id="floatingPassword" placeholder="Password" [(ngModel)]="description" name="description"  ></textarea>
+              <label for="floatingPassword">Notice description</label>
+            </div>
+          </div>
+
+          <span>
+            <button class="btn btn-outline-secondary" (click)="newNoticeOpen = false">Cancel</button>
+            <button class="btn btn-outline-primary" (click)="addNewNotice()" >Post</button>
+          </span>
+        </div>
+
+        <div class="notices-container" *ngIf="notices" >
+
+          <div class="notice" *ngFor="let notice of notices">
+            <span>
+              <h4>{{notice.title}}</h4>
+              <p>{{notice.date.slice(0,25)}}</p>
+            </span>
+            <p>{{notice.description}}</p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

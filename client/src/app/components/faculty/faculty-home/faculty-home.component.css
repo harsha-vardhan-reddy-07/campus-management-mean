@@ -1,0 +1,71 @@
+.faculty-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.faculty-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.faculty-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.faculty-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+.faculty-details{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-text{
+
+    border: 1px solid rgba(160, 179, 195, 0.425);
+    padding: 5% 20% 5% 7%;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.details-text span{
+    display: flex;
+    gap: 5px;
+}
+
+.details-text span b{
+    font-weight: 500;
+    color: rgb(20, 88, 114);
+}
+
+.details-text span p{
+    color: rgb(109, 157, 170);
+}
+
+.details-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-image img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(165, 193, 208);
+}
+.details-image p{
+
+}

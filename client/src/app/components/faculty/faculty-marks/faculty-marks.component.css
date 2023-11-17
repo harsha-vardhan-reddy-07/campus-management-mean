@@ -1,0 +1,108 @@
+.faculty-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.faculty-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.faculty-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.faculty-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+.marks-filter{
+    display: flex;
+    gap: 1%;
+    margin-top: 8vh;
+}
+
+.marks-filter select{
+    width: 27.5%;
+    height: 8vh;
+}
+
+.marks-filter button{
+
+}
+
+.students-marks-container{
+
+    margin-top: 5vh;
+}
+
+.students-marks-container h4{
+
+
+}
+
+.students-marks-body{
+
+    margin-top: 5vh;
+    width: 90%;
+    margin-left: 5%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.students-marks-body button{
+
+    margin-top: 5vh;
+    width: 20%;
+    margin-left: 40%;
+}
+
+.students-marks{
+    display: grid;
+    max-height: 40vh;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    row-gap: 20px;
+    overflow-y: scroll;
+}
+
+.students-marks span{
+    display: flex;
+    border: 1px solid rgba(66, 125, 176, 0.331);
+    width: fit-content;
+    padding: 3%;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0.5rem;
+    height: 8vh;
+    background-color: rgb(243, 249, 255);
+}
+
+.students-marks span p{
+    margin: 0;
+    color: rgb(62, 94, 122);
+}
+
+.students-marks span input{
+    width: 100px;
+    background-color: rgb(247, 251, 255);
+    border: 1px solid rgb(215, 224, 231);
+    height: 100%;
+    padding: 2%;
+}
+
+.students-marks span input:focus{
+    outline: none;
+}

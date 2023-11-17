@@ -1,0 +1,80 @@
+.admin-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.admin-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.admin-home span{
+
+    display: flex;
+    justify-content: space-between;
+ }
+
+.admin-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.admin-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+
+.update-timetable-container{
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+    background-color: rgb(253, 254, 255);
+    width: 50vw;
+    padding: 3% 2%;
+    border-radius: 0.7rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.update-timetable-container span button{
+
+    width: 25%;
+}
+
+
+.timetable-filter{
+
+    display: flex;
+    gap: 1%;
+}
+
+.timetable-filter select{
+
+    height: 8vh;
+}
+
+.timetable-filter button{
+
+    width: 45%;
+}
+
+.timetable-img{
+    margin-top: 5vh;
+}   
+
+.timetable-img img{
+
+    width: 100%;
+    height: 58vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0.5rem;
+}

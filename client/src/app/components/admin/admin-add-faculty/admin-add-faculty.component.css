@@ -1,0 +1,76 @@
+.admin-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+}
+
+.admin-home{
+
+    width: 100%;
+    background-color: azure;
+    padding: 2%;
+    border-radius: 0.8rem;
+}
+
+.admin-home h3{
+
+   font-size: 1.8rem;
+   font-weight: 400;
+   color: rgb(38, 90, 127);
+}
+
+.admin-home hr{
+
+    color: rgb(167, 169, 171);
+}
+
+
+.students-data-container{
+    width: 80%;
+    background-color: rgb(245, 250, 255);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 4% 3%;
+    margin-left: 10%;
+    margin-top: 3%;
+    border-radius: 0.6rem;
+}
+
+.students-data-container input{
+    width: 100%;
+}
+
+.span-50-50{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+    width: 100%;
+}
+
+.span-50-50 input{
+    width: 100%;
+
+}
+
+.span-50-50 select{
+
+
+
+}
+
+.span-333{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+}
+
+.span-333 input{
+
+}
+
+.students-data-container button{
+    width: 100%;
+    height: 8vh;
+
+}
